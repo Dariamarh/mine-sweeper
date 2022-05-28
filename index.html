@@ -6,34 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mine Sweeper</title>
-    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="stylesheet" href="css/main2.css">
 </head>
 
 <body onload="initGame()">
-    <h1>Mine Sweeper</h1>
-    <div class="board-container">
-        <div class="conteiner">
-            <div>Timer: <span class="timer"></span></div>
-
-            <div class="lev">Level</div>
-            <form>
-                <input onclick="changeBoard(this)" type="radio" value="16" checked="checked" name="board-size" />
-                <label>Easy</label>
-                <input onclick="changeBoard(this)" type="radio" value="64" name="board-size" />
-                <label>Medium</label>
-                <input onclick="changeBoard(this)" type="radio" value="144" name="board-size" />
-                <label>Hard</label>
-            </form>
+    <div class="page">
+        <div class="level">
+            <h4>Select Level:</h4>
+           
+                <button class="button" onclick="changeBoard(this.value)" value= 'Easy'>Easy</button>
+                <button class="button" onclick="changeBoard(this.value)" value= 'Medium'>Medium</button>
+                <button class="button" onclick="changeBoard(this.value)" value= 'Hard'>Hard</button>
+                
         </div>
-        <p class="game-over"></p>
-        <table class="board">
-            </tbody>
-        </table>
-        <button class="restart" onclick="restart()">Play Again</button>
-    </div>
-    <p></p>
-
-
+        <div class="center">
+            <h1>Mine Sweeper</h1>
+            <div class="board-container">
+                <div>Timer: <span class="timer"></span></div>
+                <!-- <button class="restart" onclick="restart()">Play Again</button> -->
+                <button class="restart" onclick="restart()"> <img src="img/start.jfif" height ="65" width="65" /></button>
+                <div class="lives"></div>
+                <!-- <tr> Lives</tr> -->
+            </div>
+            <p class="game-over"></p>
+            <table>
+                <tbody class="board"></tbody>
+            </table>
+        </div>
+        <div class="right">
+            <h4>Features:</h4>
+<button class="button-right" onclick="hintsButton()">Hints</button>
+<button class="button-right">Safe-Click</button>
+<button class="button-right">7 BOOM</button>
+        </div>
+        <p></p>
     </div>
     <script src="js/utils.js"></script>
     <script src="js/main2.js"></script>

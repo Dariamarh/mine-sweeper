@@ -1,7 +1,8 @@
 body {
     background: url(https://img.freepik.com/free-vector/cosmic-background-alien-planet-deserted-landscape-with-mountains_107791-6400.jpg?t=st=1653574301~exp=1653574901~hmac=e4b2954461560c1f563db76618b8f841099a2feef0ea94d0de240bcfa5877c12&w=900);
     background-repeat: no-repeat;
-    background-size: 1380px 760px;
+    background-size: 1370px 760px;
+    
 }
 
 h1 {
@@ -31,8 +32,8 @@ h3 {
     margin: 2px;
     font-size: 18px;
     font-weight: bold;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 300px;
+    margin-right: 300px;
     margin: 0 auto;
     border-radius: 15px;
 
@@ -71,6 +72,7 @@ h3 {
     margin-bottom: 20px;
     margin-top: 20px;
     margin-left: 25px;
+    margin-right: 300px;
     border: 3px outset rgba(241, 249, 255, 0.938);
     border-radius: 0px 40px 0px 40px;
     display: flex;
@@ -115,4 +117,10 @@ h3 {
 .restart:hover {
     animation: pulse 1s;
     box-shadow: 0 0 0 2em transparent;
+}
+
+.board-container{
+    display: flex;
+    flex-direction: row;
+
 }
